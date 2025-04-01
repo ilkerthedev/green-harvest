@@ -1,0 +1,181 @@
+.how-it-works {
+  background: linear-gradient(to bottom, #7a3145 56%, #576f35 50%);
+}
+.img-hiw { 
+  padding: 40px 20px;
+  background-color: #7a3145;
+}
+/* --  counter for steps 1-2-3  -- */
+.steps-hiw {
+  counter-reset: count;
+  
+}
+
+.items-hiw {
+  counter-increment: count;
+  
+}
+
+.counter-steps-hiw::before {
+  content: counter(count);
+  
+  display: block;
+  
+}
+
+.woman-hiw {
+ 
+  border-radius: 30px;
+  margin: 0 auto;
+}
+
+.content-hiw {
+  
+  padding: 80px 20px; 
+  margin: 0 auto;
+  background-color: #576f35;
+}
+.text-cont-hiw {
+  margin-bottom: 52px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title-hiw {
+  max-width: 335px;
+  color: #fbfbfb;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 1;
+  letter-spacing: -0.01em;
+  text-align: left;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.s-grey {
+  color: #d4bfc4;
+}
+
+.text-hiw {
+  color: #fbfbfb;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.43;
+  text-align: left;
+  max-width: 335px;
+  margin-bottom: 40px;
+}
+
+.steps-hiw {
+  
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+  gap: 20px;
+}
+
+.item-steps-hiw {
+  max-width: 335px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  border-radius: 15px;
+  background-color: #fbfbfb;
+  padding: 12px 24px;
+}
+
+.counter-steps-hiw {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  width: 52px;
+  height: 52px;
+  border: 5px solid rgb(212, 191, 196);
+  border-radius: 50%;
+  background: rgb(122, 49, 69);
+  text-align: center;
+  color: #fbfbfb;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.11;
+  letter-spacing: -0.015em;
+  text-transform: uppercase;
+}
+
+.action-items-hiw {
+  color: #858585;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.43;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.s-black {
+  font-weight: 700;
+  color: #141414;
+}
+
+@media screen and (min-width: 768px) {
+  .img-hiw {
+    padding: 100px 64px;
+  }
+
+  .content-hiw {
+    padding: 100px 164px;
+  }
+
+  .item-steps-hiw {
+    min-width: 440px;
+    padding: 12px 15px 12px 24px;
+  }
+
+  .title-hiw {
+    
+        min-width: 440px;
+      
+    font-size: 32px;
+    margin-bottom: 24px;
+  }
+
+  .text-hiw {
+    min-width: 440px;
+    font-size: 16px;
+    margin-bottom: 52px;
+  }
+
+  .action-items-hiw {
+    font-size: 16px;
+    line-height: 1.25;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+.how-it-works {
+    background: linear-gradient(to right, #7a3145 50%, #576f35 50%);
+  }
+  .desk-only-hiw {
+    display: flex;
+  }
+
+  .img-hiw {
+    max-width: 640px;
+    padding: 100px;
+    margin: 0 0 0 auto;
+  }
+
+  .content-hiw {
+    max-width: 640px;
+    height: 100%;
+    padding: 100px;
+    margin: 0 auto 0 0;
+  }
+ 
+  .text-hiw {
+    
+    margin-bottom: 104px;
+  }
+}

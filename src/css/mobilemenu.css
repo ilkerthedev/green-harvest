@@ -1,0 +1,138 @@
+
+.overlay {
+    background: rgba(20, 20, 20, 0.4);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+.overlay.is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+.mobile-menu {
+    background-color: #576f35;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+    width: 100%;
+    padding-top: 52px;
+    padding-bottom: 52px;
+}
+
+.mobile-menu.is-open {
+    transform: translateX(0);
+}
+
+.close-icon-mobile {
+    stroke: #fbfbfb;
+
+}
+
+.nav-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    align-items: center;
+    flex-grow: 1;
+    width: 100%;
+}
+
+.menu-list {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 0px;
+
+}
+
+.menu-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+
+}
+
+.menu-item .link {
+    color: #fbfbfb;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.43;
+    letter-spacing: 0em;
+    text-align: center;
+    padding: 12px 18px;
+    border: 1px solid #fbfbfb;
+    border-radius: 12px;
+    min-width: 120px;
+    cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        color: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.menu-item .link:active {
+    background-color: #fbfbfb;
+    color: #7a3145;
+
+}
+
+.button {
+    display: block;
+    width: 175px;
+    height: 52px;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.11;
+    letter-spacing: 0.04em;
+    cursor: pointer;
+    color: #fbfbfb;
+    background-color: #7a3145;
+    border: none;
+    border-radius: 30px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); color: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+
+.button:active {
+    background-color: #fbfbfb;
+    color: #7a3145;
+}
+
+@media (min-width: 768px) {
+    .mobile-menu {
+        max-width: 351px;
+        margin-left: auto;
+    }
+
+    .menu-item .link {
+        font-size: 16px;
+        line-height: 1.25;
+        min-width: 132px;
+    }
+
+    .button {
+        width: 157px;
+        bottom: 48px;
+    }
+
+    .container-nav {
+        gap: 380px;
+        bottom: 48px;
+    }
+}
